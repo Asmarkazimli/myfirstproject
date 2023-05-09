@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Zumbiz Free Website Template</title>
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Asmar Kazimli">
+    <meta name="description" content="ZOMBIZ">
+    <meta http-equip="refresh" content="30">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/46b3050983.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+     <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+</head>
+<body>
+    <div class="head1">
+        <a href="https://www.elegantthemes.com/"><img src="photos/elegantthemes-900x120.jpg" alt=""></a>
+    </div>
+    <div class="head2">
+        <div class="head2-left">
+            <a href="https://www.free-css.com/free-css-templates"> <i class="fa-solid fa-phone"></i>+992 563 542</a>
+            <a href="https://www.free-css.com/free-css-templates"><i class="fa-solid fa-envelope"></i>info@domain.com</a>
+        </div>
+        <div class="head2-right">
+            <span class="reg">Register
+                <div class="sign">
+            <h4>Sign In</h4>
+                <form action="">
+                    <label for="">Name:</label>
+                    <input type="email" placeholder="Enter Email"><br>
+                    <label for="">Password:</label>
+                    <input type="password" placeholder="Password"><br>
+                    <input style="font-size:small ;"  type="checkbox"> <span><b> Remember Me</b> </span>
+                    <button class="subbut">Submit</button>
+                </form>
+        </div>
+            </span><span>/</span>
+            <span class="log">Log in
+                <div class="register">
+                    <h4>Register</h4>
+                    <form action="">
+                        <label for="">Name:</label> 
+                        <input type="text" placeholder="Enter Name"> 
+                        <label for="">Email:</label>
+                        <input type="email" placeholder="Enter Email"> 
+                        <label for="">Password:</label>
+                        <input type="password" placeholder="Enter Password">
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </span>
+            <a href="https://www.free-css.com/free-css-templates"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.free-css.com/free-css-templates"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="https://www.free-css.com/free-css-templates"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.free-css.com/free-css-templates"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+        <div class="head3"> 
+            <div class="zom f"><h4 style="font-size:xx-large;">ZomBiz</h4></div>
+            <!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--        MIT License        -->
+<div class="hamburgernav" role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+     <li> <div class="zom "><h4 style="font-size:xx-large;">ZomBiz</h4></div></li>
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Service</li></a>
+      <a href="#"><li>Project</li></a>
+      <a href="#"><li>Team</li></a>
+      <a href="#"><li>Blog</li></a>
+      <a href="#"><li>Contact</li></a>
+    </ul>
+  </div>
+</div>
+            <div class="home f  j"><a style="color:white" href="index.html">Home</a></div>
+            <div class="about f j"><a style="color:white"  href="index.html">About</a></div>
+            <div class="service f j"><a style="color:white"  href="index.html">Service</a></div>
+            <div class="pro f j"><a style="color:white"  href="index.html">Project</a></div>
+            <div class="team f j"><a style="color:white"  href="index.html"> Team</a></div>
+            <div class="blog f j"><a style="color:white"   href="index.html">Blog</a></div>
+            <div class="contact f j"><a style="color:white"  href="index.html">Contact</a></div>
+            <div class="v f j"><a  style="color:white ;"    href="https://www.free-css.com/free-css-templates"><i class="fa-solid fa-cart-shopping"></i></a></div>
+            <div class="glass f j"><i class="fa-solid fa-magnifying-glass"></i>
+            <form action="">
+                <input  class="ggg"   type="text" placeholder="Search...">
+            </form>
+        </div>
+        </div>
+        
+         <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide1">
+              <div class="slide-color">
+              </div>
+                <h2>Consult Your Business</h2>
+                <p>We are the unique Consultancy Farm for your business solution, That is ready to take challenge and knockout your business problems.</p>
+                    <button class="slide1-button">GET STARTED</button>
+                    <button class="slide1-button">EXPLORE MORE</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide2">
+              <div class="slide-color">
+              </div>
+                <h2 class="consult">Consult Your Business</h2>
+                <p class="consult2">We are the unique Consultancy Farm for your business solution, That is ready to take challenge and knockout your business problems.</p>
+                <button class="slide2-button">GET STARTED</button>
+                <button class="slide2-button">EXPLORE MORE</button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  <h2 class="error">404 not found</h2>
+        <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <div class="second">
+      <div class="second-head">
+      <h2><b> What We Do</b></h2>
+      <p>Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    <div class="second-boxs">
+      <div class="sec-box">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h4><a href="https://www.free-css.com/free-css-templates/page274/zombiz">Business Consultancy</a></h4>
+        <p style="color: rgb(125, 121, 121);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.</p>
+      </div>
+      <div class="sec-box">
+        <i class="fa-solid fa-arrows-up-to-line"></i>
+        <h4><a href="https://www.free-css.com/free-css-templates/page274/zombiz">Help To Grow Business</a></h4>
+        <p style="color: rgb(125, 121, 121);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.</p>
+      </div>
+      <div class="sec-box">
+        <i class="fa-regular fa-circle-check"></i>
+        <h4> <a href="https://www.free-css.com/free-css-templates/page274/zombiz">Great Support</a></h4>
+        <p style="color: rgb(125, 121, 121);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.</p>
+      </div>
+    </div>
+  </div>
+  <div class="third">
+ <div class="third-left">
+<h2>About Us</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+<div class="third-but">
+<a href="https://www.free-css.com/free-css-templates/page274/zombiz">LEARN MORE</a>
+</div>
+</div>
+ <div class="third-right">
+<img src="photos/about-part.jpg">
+ </div>
+  </div>
+  <div class="fourth">
+    <div class="fourth-head">
+      <h2>Our Services</h2>
+      <p>Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+   <div class="boxbox">
+    <div class="fourth-a  hov">
+      <i class="fa-solid fa-people-group"></i>
+        <h4> <a href="https://www.free-css.com/free-css-templates/page274/zombiz">Busisness Planning</a></h4>
+        <p style="color: rgb(125, 121, 121);">Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat.</p>
+          <a  style="font-size:small;" href="https://www.free-css.com/free-css-templates">Learn More</a>
+      </div>
+      <div class="fourth-b hov">
+        <i class="fa-solid fa-square-poll-horizontal"></i>
+          <h4> <a href="https://www.free-css.com/free-css-templates/page274/zombiz">Busisness Consultency</a></h4>
+          <p style="color: rgb(125, 121, 121);">Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat</p>
+            <a style="font-size:small;" href="https://www.free-css.com/free-css-templates">Learn More</a>
+        </div>
+        <div class="fourth-c hov">
+         <i class="fa-solid fa-building-user"></i>
+            <h4> <a href="https://www.free-css.com/free-css-templates/page274/zombiz">Financial Services</a></h4>
+            <p style="color: rgb(125, 121, 121);">Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat</p>
+              <a style="font-size:small;" href="https://www.free-css.com/free-css-templates">Learn More</a>
+          </div>
+      </div>
+      <div class="boxbox">
+        <div class="fourth-d hov">
+          <i class="fa-regular fa-clock"></i>
+            <h4> <a href="https://www.free-css.com/free-css-templates/page274/zombiz">Risk Management</a></h4>
+            <p style="color: rgb(125, 121, 121);">Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat.</p>
+              <a  style="font-size:small;" href="https://www.free-css.com/free-css-templates">Learn More</a>
+          </div>
+          <div class="fourth-e hov">
+            <i class="fa-solid fa-people-line"></i>
+              <h4> <a href="https://www.free-css.com/free-css-templates/page274/zombiz">Expert Advisers</a></h4>
+              <p style="color: rgb(125, 121, 121);">Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat</p>
+                <a style="font-size:small;" href="https://www.free-css.com/free-css-templates">Learn More</a>
+            </div>
+            <div class="fourth-f hov">
+              <i class="fa-solid fa-user-ninja"></i>
+                <h4> <a href="https://www.free-css.com/free-css-templates/page274/zombiz">24/7 Customer Support</a></h4>
+                <p style="color: rgb(125, 121, 121);">Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat</p>
+                  <a style="font-size:small;" href="https://www.free-css.com/free-css-templates">Learn More</a>
+              </div>
+          </div>
+  </div>
+  <div class="purple">
+    <div class="calc">
+      <i class="fa-solid fa-calculator"></i>
+    <p>2556</p>
+    <p>Days Worked</p>
+  </div>
+  <div class="done">
+    <i class="fa-regular fa-circle-check"></i>
+    <p>326</p>
+    <p>Project Finished</p>
+  </div>
+  <div class="cup">
+    <i class="fa-solid fa-mug-hot"></i>
+    <p>1526</p>
+    <p>Coffee Cup</p>
+  </div>
+  <div class="smile">
+    <i class="fa-regular fa-face-smile"></i>
+    <p>826</p>
+    <p>Client Satisfied</p>
+  </div>
+  </div>
+  <div class="fivety">
+<div class="fivety-head">
+<h2>Our Finished Projects</h2>
+<p>Pallamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="fivety-photo">
+<div class="fpa">
+  <img src="photos/project1.jpg" alt="">
+</div>
+<div class="fpb">
+  <img src="photos/project2.jpg" alt="">
+  <img src="photos/project3.jpg" alt="">
+  <img style="width: 26%;" src="photos/project4.jpg" alt="">
+  <img style="width: 20%;"  src="photos/project5.jpg" alt="">
+</div>
+<div class="third-but fivety-but vvvv">
+    <a href="https://www.free-css.com/free-css-templates/page274/zombiz">VIEW ALL</a>
+    </div>
+</div>
+<!-- <table>
+  <tr>
+    <td rowspan="2"><img src="project1.jpg" alt=""></td>
+    <td><img src="project2.jpg" alt=""></td>
+    <td><img src="project3.jpg" alt=""></td>
+  </tr>
+  <td></td>
+  <td ><img class="dddd" src="project4.jpg" alt=""></td>
+  <td><img  class="dddd"src="project5.jpg" alt=""></td>
+</table> -->
+</div>
+  </div>
+  <div class="purple-b">
+    <div  style="color: white;"   class="fivety-head">
+      <h2>Our Expert Team</h2>
+      <p>Pallamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+<div class="boxboxboxbox">
+  <div class="box-four tom">
+    <img src="photos/team.jpg" alt="">
+   <div class="tttt">
+    <h4>Tom Hanks</h4>
+    <p>Founder & Ceo</p>
+  </div>
+  </div>
+  <div class="box-four">
+    <img src="photos/team2.jpg" alt="">
+    <div class="tttt">
+    <h4>Alex Browne</h4>
+    <p>Director,Maneger & Research</p>
+  </div>
+  </div>
+  <div class="box-four">
+    <img src="photos/team2.jpg" alt="">
+    <div class="tttt">
+    <h4>Darren J. Stevens </h4>
+    <p>Director,Finans Solution</p>
+  </div>
+  </div>
+  <div class="box-four">
+    <img src="photos/team3.jpg" alt="">
+    <div class="tttt">
+    <h4>Kevin Thomson </h4>
+    <p>Head,Legal Advising</p>
+  </div>
+  </div>
+</div>
+  </div>
+  <div class="sixty">
+    <div class="sixty-head">
+<h2>Our Pricing Table</h2>
+<p>Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    <div class="sixty-box">
+      <div class="sixty-a">
+        <div class="sixty-hh">
+          <h4> Basic</h4>
+          <h4>$99</h4>
+          <h4>Monthly</h4>
+        </div>
+        <ul></ul>
+          <li> 01 User</li>
+          <li>01 Project</li>
+          <li>01 Advisor Team</li>
+          <li>Complete Statistics</li>
+          <li>E-Mail Support</li>
+          <div class="third-but ">
+            <a href="https://www.free-css.com/free-css-templates/page274/zombiz">Sign Up Now</a>
+            </div>
+      </div>
+      <div class="sixty-a">
+        <div class="sixty-hh">
+          <h4> Standard</h4>
+          <h4>$299</h4>
+          <h4>Monthly</h4>
+        </div>
+        <ul></ul>
+          <li> 05 User</li>
+          <li>05 Project</li>
+          <li>05 Advisor Team</li>
+          <li>Complete Statistics</li>
+          <li>E-Mail Support</li>
+          <div class="third-but ">
+            <a href="https://www.free-css.com/free-css-templates/page274/zombiz">Sign Up Now</a>
+            </div>
+      </div><div class="sixty-a">
+        <div class="sixty-hh">
+          <h4> Advanced</h4>
+          <h4>$499</h4>
+          <h4>Monthly</h4>
+        </div>
+        <ul></ul>
+          <li> 10 User</li>
+          <li>10 Project</li>
+          <li>10 Advisor Team</li>
+          <li>Complete Statistics</li>
+          <li>E-Mail Support</li>
+          <div class="third-but ">
+            <a href="https://www.free-css.com/free-css-templates/page274/zombiz">Sign Up Now</a>
+            </div>
+      </div>
+      <div class="sixty-a">
+        <div class="sixty-hh">
+          <h4> Unlimited</h4>
+          <h4>$1099</h4>
+          <h4>Monthly</h4>
+        </div>
+        <ul></ul>
+          <li> Unlimited  User</li>
+          <li>Unlimited  Project</li>
+          <li>Unlimited  Advisor Team</li>
+          <li>Complete Statistics</li>
+          <li>E-Mail Support</li>
+          <div class="third-but ">
+            <a href="https://www.free-css.com/free-css-templates/page274/zombiz">Sign Up Now</a>
+            </div>
+      </div>
+    </div>
+  </div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> 
+        <div class="seventy">
+        <h2>What Our Client Say About Us</h2>
+        <div class="sf">
+          <img src="photos/testimonial2.jpg" alt="">
+        </div>
+        <i style="color: rgb(180, 177, 177);" class="fa-solid fa-quote-left fa-5x"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic cumque maxime accusamus animi dicta necessitatibus doloribus et nemo quo asperiores, quisquam eaque sequi neque! Quaerat, provident a! Earum amet quos blanditiis cum facilis magni, esse voluptatem dicta officiis. Architecto quibusdam possimus cupiditate. Expedita, non. Libero omnis dolorem culpa obcaecati?</p>
+      <a class="kevin"  href="https://www.free-css.com/free-css-templates/page274/zombiz">Kevin Watson</a>
+      <h4>CEO,Kingston</h4>
+      </div>
+    </div>
+      <div class="swiper-slide"> <div class="seventy">
+        <h2>What Our Client Say About Us</h2>
+        <div class="sf">
+          <img src="photos/testimonial2.jpg" alt="">
+        </div>
+        <i style="color: rgb(180, 177, 177);" class="fa-solid fa-quote-left fa-5x"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic cumque maxime accusamus animi dicta necessitatibus doloribus et nemo quo asperiores, quisquam eaque sequi neque! Quaerat, provident a! Earum amet quos blanditiis cum facilis magni, esse voluptatem dicta officiis. Architecto quibusdam possimus cupiditate. Expedita, non. Libero omnis dolorem culpa obcaecati?</p>
+      <a  class="kevin"   href="https://www.free-css.com/free-css-templates/page274/zombiz">Kevin Watson</a>
+      <h4>CEO,Kingston</h4>
+      </div>
+    </div>
+      <div class="swiper-slide"> <div class="seventy">
+        <h2>What Our Client Say About Us</h2>
+        <div class="sf">
+          <img src="photos/testimonial2.jpg" alt="">
+        </div>
+        <i style="color: rgb(180, 177, 177);" class="fa-solid fa-quote-left fa-5x"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic cumque maxime accusamus animi dicta necessitatibus doloribus et nemo quo asperiores, quisquam eaque sequi neque! Quaerat, provident a! Earum amet quos blanditiis cum facilis magni, esse voluptatem dicta officiis. Architecto quibusdam possimus cupiditate. Expedita, non. Libero omnis dolorem culpa obcaecati?</p>
+      <a class="kevin"  href="https://www.free-css.com/free-css-templates/page274/zombiz">Kevin Watson</a>
+      <h4>CEO,Kingston</h4>
+      </div>
+    </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       pagination: {
+         el: ".swiper-pagination",
+         type: "progressbar",
+       },
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     });
+   </script>
+  <div class="purple5">
+<a href="https://www.free-css.com/free-css-templates/page274/zombiz">
+  <img src="photos/p1.png" alt="">
+</a>
+<a href="https://www.free-css.com/free-css-templates/page274/zombiz">
+  <img src="photos/p2.png" alt="">
+</a>
+<a href="https://www.free-css.com/free-css-templates/page274/zombiz">
+  <img src="photos/p3.png" alt="">
+</a>
+<a href="https://www.free-css.com/free-css-templates/page274/zombiz">
+  <img src="photos/p4.png" alt="">
+</a>
+  </div>
+  <div class="eighty">
+    <div class="sixty-head">
+      <h2>Our Latest News</h2>
+      <p>Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div class="eighty-boxs">
+            <div class="eighty-a">
+            <div class="eighty-img">
+                   <img src="photos/bl1.jpg" alt="">
+            </div>
+            <a  href="https://www.free-css.com/assets/files/free-css-templates/preview/page274/zombiz/pages/blog_single.php">The Pros. And Cons Of Starting An Online Consulting Business </a>
+          <span>Posted By: Mick Steven // On 12th June, 2045</span>
+          </div>
+          <div class="eighty-a">
+            <div class="eighty-img">
+                   <img src="photos/bl2.jpg" alt="">
+            </div>
+            <a href="https://www.free-css.com/assets/files/free-css-templates/preview/page274/zombiz/pages/blog_single.php">8 Secrets For Your Successfull Business Mentor Won't Tell You </a>
+          <span>Posted By: Mick Steven // On 12th June, 2045</span>
+          </div>
+          <div class="eighty-a">
+            <div class="eighty-img">
+                   <img src="photos/bl3.jpg" alt="">
+            </div>
+            <a href="https://www.free-css.com/assets/files/free-css-templates/preview/page274/zombiz/pages/blog_single.php">Hire A Branding Consultant With A Similar Aeshetic To Your Own </a>
+          <span>Posted By: Mick Steven // On 12th June, 2045</span>
+          </div>
+        </div>
+        <div class="butbutbut">
+        <div class="third-but ebut">
+          <a href="https://www.free-css.com/free-css-templates/page274/zombiz">READ MORE</a>
+          </div>
+        </div>
+  </div>
+  <div class="map">
+    <div class="map-color"></div>
+<div class="map-head">
+<h2 style="font-size:xx-large">Contact Us</h2>
+<p>Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</div>
+<div class="map-main">
+  <div class="map-main-a">
+    <h2>Contact Info</h2>
+    <p>125, Park street avenue, Brocklyn, Newyork.</p>
+    <div class="online-address">
+      <i class="fa-solid fa-phone"></i>
+      <span>+11253678958</span>
+    </div>
+    <div class="online-address">
+      <i class="fa-regular fa-envelope"></i>
+      <span>info@domain.com</span>
+     </div>
+     <div class="online-address">
+      <h2>Social Partner</h2>
+      <a href="https://www.free-css.com/free-css-templates"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.free-css.com/free-css-templates"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="https://www.free-css.com/free-css-templates"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.free-css.com/free-css-templates"><i class="fa-brands fa-twitter"></i></a>
+     </div>
+  </div>
+  <div class="map-main-b">
+  <div class="map-main-ba">
+    <h2 style="color:#ccc ;">Leave Us A Massage Here</h2>
+  </div>
+
+<div class="formt">
+  <form action="">
+    <input  class="nnn" type="text" name="" id="" placeholder="First Name">
+    <input class="nnn" type="text" name="" id="" placeholder="Last Name"> <br>
+    <input class="nnn" type="email" placeholder="Email">
+    <input  class="nnn" type="phone" placeholder="Phone"><br>
+    <input class="message" type="text" placeholder="Message">
+  </form>
+</div>
+<div class="bbbb">
+  <div class="third-but ebut">
+  <a  class="sendmes"    href="https://www.free-css.com/free-css-templates/page274/zombiz">SEND MESSAGE</a>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+  <div class="want">
+    <div class="want-a">
+<h3>Want To Start A New Project With Us? Let’s Start!</h3>
+</div>
+<div class="want-b">
+  <div class="third-but ">
+    <a href="https://www.free-css.com/free-css-templates/page274/zombiz">Sign Up Now</a>
+    </div>
+</div>
+  </div>
+  <div class="ninety">
+    <div class="ninety-a">
+     
+      <a href="https://www.free-css.com/free-css-templates"><img src="photos/logo.png" alt=""></a>
+      <p>Lorem ipsum dolor sit amt conetur adcing elit. Sed do eiusod tempor utslr. Ut laboris nisi ut aute irure dolor in rein velit esse.</p>
+      <div class="na">
+      <a href="https://www.free-css.com/free-css-templates"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.free-css.com/free-css-templates"><i class="fa-brands fa-google-plus-g"></i></a>
+      <a href="https://www.free-css.com/free-css-templates"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.free-css.com/free-css-templates"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    </div>
+    <div class="ninety-b">
+      <h4 style="font-size:large ;" >Useful Links</h4>
+      <ul>
+        <li> <a href="https://www.free-css.com/free-css-templates">Home</a></li>
+        <li><a href="https://www.free-css.com/free-css-templates">About</a></li>
+        <li> <a href="https://www.free-css.com/free-css-templates">Service</a></li>
+        <li><a href="https://www.free-css.com/free-css-templates">Portfolio</a></li>
+        <li><a href="https://www.free-css.com/free-css-templates">Blog</a></li>
+        <li><a href="https://www.free-css.com/free-css-templates">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="ninety-c">
+      <h4 style="font-size:large ;" >From The News</h4>
+      <a href="https://www.free-css.com/assets/files/free-css-templates/preview/page274/zombiz/pages/blog_single.php">The Pros and Cons of Starting an Online Business.</a>
+     <span>12th June 2045</span>
+      <hr>
+      <a href="https://www.free-css.com/assets/files/free-css-templates/preview/page274/zombiz/pages/blog_single.php">The Pros and Cons of Starting an Online Business.</a>
+     <span>12th June 2045</span>
+    </div>
+    <div class="ninety-d">
+      <h4 style="font-size:large ;">Our Newsletter</h4>
+      <p>Subscribe to our newsletter to get the latest News and offers..</p>
+      <div class="neb">
+      <input type="text" style="padding-left: 2%;" placeholder="Email Address">
+      <button>GO</button>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
